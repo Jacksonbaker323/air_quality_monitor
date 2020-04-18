@@ -40,3 +40,8 @@ output_string += 'particulate_matter_ugpm3{{size="pm4",sensor="SPS30"}} {0:.8f}\
 #output_string += 'particulate_matter_ugpm3{{size="pm10",sensor="SPS30"}} {0:.8f}\n'.format( pm10 )
 output_string += 'particulate_matter_typpartsize_um{{sensor="SPS30"}} {0:.8f}\n'.format( calcFloat(values[54:60]))
 print(output_string)
+
+
+#Review the datasheet here: https://cdn.sparkfun.com/assets/learn_tutorials/1/4/3/CCS811_Datasheet-DS000459.pdf
+#and the source code here:https://circuitpython.readthedocs.io/projects/ccs811/en/latest/_modules/adafruit_ccs811.html#CCS811
+# to attempt to reverse engineer
